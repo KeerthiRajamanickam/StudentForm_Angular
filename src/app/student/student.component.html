@@ -3,13 +3,7 @@
   <h1>STUDENT FORM</h1>
 </div>
 <br />
-<form
-  #f="ngForm"
-  name="form"
-  (ngSubmit)="addStudent()"
-  class="row g-12"
-  style="text-align:center"
->
+<form #f="ngForm" name="form" (ngSubmit)="addStudent()" class="row g-12">
   <div>
     <div class="col-12">
       <label for="firstname">First Name</label>&nbsp;
@@ -41,6 +35,7 @@
       <input type="date" id="dob" name="dob" [(ngModel)]="model.dob" />
     </div>
     <br />
+    <label for="gender">Gender</label>
     <div class="col-12">
       <label for="male">Male</label>&nbsp;
       <input
@@ -86,6 +81,7 @@
       </select>
     </div>
     <br />
+    <label for="languageknown">Language Known</label>
     <div class="col-12">
       <input
         type="checkbox"
